@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+body {
+    background: linear-gradient(rgb(131, 131, 131), transparent 1px),
+        linear-gradient(90deg, rgb(131, 131, 131), transparent 1px);
+    background-size: 30px 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(87, 85, 85);
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 30px;
+    text-align: right;
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin: 50px;
+}
+
+.input {
+    width: 350px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.input_name {
+    display: block;
+}
+
+.btns {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px 35px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.image-list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style-type: none;
+}
+
+.image-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.image-item img {
+    width: 200px;
+    height: auto;
+}
+
+.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.message-error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
